@@ -1,0 +1,8 @@
+SELECT 
+    s.FirstName + ' ' + s.LastName AS StudentName,
+    c.CourseName,
+FROM 
+    Students s
+    JOIN Courses c ON s.CourseID = c.CourseID
+ORDER BY 
+    s.LastName, s.FirstName;
